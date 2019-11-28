@@ -114,7 +114,7 @@ import padIo.*;
 			String name=args[1];
 			File f = new File(name);
 			if (args.length!=2){
-				System.out.println("Two arguments exspected: the path of the file to be compressed and the name of the new file ");
+				System.out.println("Two arguments expected: the path of the file to be compressed and the name of the new file ");
 			}
 			else if(f.exists()){ 
 				System.out.println("The name: "+name+" is already used by an another file\nPlease choose a differente one");
@@ -171,7 +171,7 @@ import padIo.*;
 							while (!Freq.isAtEnd()){
 								if (Freq.currentData().getLetter()==letter) break;
 									Freq.increment();								
-								}
+							}
 							Freq.currentData().getBitcode().reset();
 							//starts printing the code of the character
 							while(!Freq.currentData().getBitcode().isAtEnd()){

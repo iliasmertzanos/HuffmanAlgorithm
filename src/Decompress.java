@@ -44,8 +44,14 @@ public class Decompress {
 					//print the table in aout file
 					while(bin.bitsLeft() > 0){
 						boolean bo = bin.readBit();
-						if (bo==true){ tree.append(new HuffmanToken(INTEGER,0),2 );tree.advance(2);}
-						else{tree.append(new HuffmanToken(INTEGER,0),3 );tree.advance(3);}
+						if (bo==true){
+							tree.append(new HuffmanToken(INTEGER,0),2 );
+							tree.advance(2);
+						}
+						else{
+							tree.append(new HuffmanToken(INTEGER,0),3 );
+							tree.advance(3);
+						}
 						aout.print(bo ? "0" : "1");
 					}					
 					aout.println();
@@ -53,6 +59,7 @@ public class Decompress {
 				}
 				bin.beginBitMode();
 				/***End of Reconstruction of Huffman tree***********************************************/
+				
 				/***Start decoding the encoded file***********************************************/
 				tree.freeToRoot();
 				//start decoding the encoded text in bout file
