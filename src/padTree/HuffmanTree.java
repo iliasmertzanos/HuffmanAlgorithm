@@ -269,17 +269,8 @@ public class HuffmanTree extends BinTree<Valued> implements Comparable<HuffmanTr
 	
 	public static void main(String[] args){
 		HuffmanTree tree1=new HuffmanTree(new HuffmanToken(15));
-		HuffmanTree tree2=new HuffmanTree(new HuffmanToken(10));
-		HuffmanTree tree3=new HuffmanTree(new HuffmanToken(17));
-		HuffmanTree tree4=new HuffmanTree(new HuffmanToken(8));
 		tree1.freeToRoot();
-//		System.out.println(tree1.advance(2));
-//		System.out.println(tree1.append(new HuffmanToken(10) ,tree1.LEFT));
-//		System.out.println(tree1.append(new HuffmanToken(10) ,tree1.LEFT));
-
-//		System.out.println(tree1);
-//		for (int i=0;i<=5;i++){
-//			tree1.freeToRoot();
+		
 		for (int j=0;j<=10;j++){
 			int bo = (int)(Math.random() * 10) % 2 != 0 ? 0: 1;
 			System.out.println("bo: "+bo);
@@ -294,27 +285,6 @@ public class HuffmanTree extends BinTree<Valued> implements Comparable<HuffmanTr
 				tree1.advance(3);
 			}
 		}
-//		}
-//		tree1.checkTree();
-		System.out.println(tree1);
-//		System.out.println(tree1.dummy.lson.data);
-//		HuffmanTree tree=new HuffmanTree(tree1,tree2);
-////		tree.checkTree();
-//		tree.encode();
-//		System.out.println(tree);
-//		tree.reset();
-//		tree.freeToCurr();
-//		System.out.println(tree.freeData());
-//		System.out.println(tree.freeAtLeftChild());
-//		tree.append(node1, 2);
-//		tree.append(node4, 3);
-//		tree.reset();
-//		for(tree.reset();tree.increment();tree.isAtEnd())
-//		while(tree.isAtEnd()==false){						
-////			System.out.println(tree.isAtEnd());
-//			System.out.println(tree.curr);
-//			tree.increment();
-//		}
 	}
 	
 }
