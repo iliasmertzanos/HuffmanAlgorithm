@@ -7,6 +7,7 @@ https://en.wikipedia.org/wiki/Huffman_coding
 
 For german speakers in the task_description in src folder.<br>
 And of course check source comments to understand what is going on.<br>
+This java code was developed during my master degree studies within a project team. <br>
 
 The main classes that perform the encoding and decoding of a file are :
 
