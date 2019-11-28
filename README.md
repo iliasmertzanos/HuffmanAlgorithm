@@ -23,5 +23,5 @@ Two arguments expected from the main method:<br>
       - First reads the table with the encoded characters, that class `Compress` has already stored and reconstructs the Huffman tree
       - Then using the tree it decodes every letter following the the step according to a letters code.<br>
       Example: for a given bit sequence 0100011 starting from top it goes left if bit=1 or right if bit=0 until it finds a leaf.<br>
-      Once a leaf is found it prints it starts again from the top.
+      Once a leaf is found it prints it and starts again from the top.
 
