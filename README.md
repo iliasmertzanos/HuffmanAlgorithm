@@ -20,7 +20,7 @@ Two arguments expected from the main method:<br>
     Has a main method that expects two arguments in the parameter `String[] args`:
     - the encoded file that was compressed from the class `Compress`
     - the name of the file that the class `Decompress` should create after decompressing the encoded file<br>
-    It reconstructs the huffman tree following this steps:
+    It decodes the file following this steps:
       - First reads the table with the encoded characters, that class `Compress` has already stored and reconstructs the Huffman tree
       - Then using the tree it decodes every letter following the the step according to a letters code.<br>
       Example: for a given bit sequence 0100011 starting from top it goes left if bit=1 or right if bit=0 until it finds a leaf.<br>
